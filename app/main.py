@@ -51,7 +51,9 @@ class CarWashStation:
             price = round(
                 improvement * car.comfort_class * self.average_rating
                 / self.distance_from_city_center, 1)
-        return price
+            return price
+        else:
+            return "Car is already clean"
 
     def rate_service(self, rate: int) -> None:
         avg_rate = self.average_rating

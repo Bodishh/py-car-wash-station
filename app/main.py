@@ -52,6 +52,7 @@ class CarWashStation:
                 improvement * car.comfort_class * self.average_rating
                 / self.distance_from_city_center, 1)
             return price
+        return 0.0
 
     def rate_service(self, rate: int) -> None:
         avg_rate = self.average_rating
